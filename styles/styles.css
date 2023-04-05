@@ -362,7 +362,7 @@ h1 {
   gap: 12px;
 }
 
-.top-footer form input[type="button"] {
+.top-footer form input[type="submit"] {
   padding: 12px 20px;
   border-radius: 20px;
   background-color: #8b48bf;
@@ -371,11 +371,11 @@ h1 {
   transition: 0.5s;
 }
 
-.top-footer form input[type="button"]:hover {
+.top-footer form input[type="submit"]:hover {
   scale: 1.1;
 }
 
-.top-footer form input[type="text"] {
+.top-footer form input[type="email"] {
   padding: 12px 30px 12px 10px;
   border-radius: 20px;
   border: 0px;
@@ -383,7 +383,7 @@ h1 {
   cursor: pointer;
 }
 
-.top-footer form input[type="text"]:focus {
+.top-footer form input[type="email"]:focus {
   outline: none;
   scale: 1.1;
 }
@@ -425,7 +425,6 @@ footer p {
     content: url(../imagenes/icon-hamburger.svg);
     cursor: pointer;
     padding: 10px;
-    transition: 0.5s;
   }
 
   .fondo-tenista {
@@ -593,7 +592,7 @@ footer p {
     width: 100%;
   }
 
-  .top-footer input[type="text"] {
+  .top-footer input[type="email"] {
     width: 60vw;
   }
   footer p {

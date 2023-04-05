@@ -20,7 +20,7 @@
   <body>
     <header>
       <img src="imagenes/logo.svg" alt="Logo" />
-      <nav>
+      <nav>   
         <ul type="none">
           <a href=""><li>Sports</li></a
           ><a href=""><li>Products</li></a
@@ -156,12 +156,14 @@
           </nav>
         </div>
         <div>
-          <form action="">
+          <form action="index.html" method="get">
             <input
-              type="text"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              type="email"
               name="go"
               placeholder="Update in your inbox..."
-            /><input type="button" value="Go" />
+            /><input type="submit" value="Go" />
           </form>
         </div>
       </section>
