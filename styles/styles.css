@@ -1,0 +1,602 @@
+/* cambios globales ++++++++++++++++++++++++++++++++++++++ */
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primario: #8b48bf;
+  --titulos: #232c50;
+  --neutro: #fafafa;
+  --p-neutro: #b3b2b7;
+}
+
+* {
+  cursor: default;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Be Vietnam Pro", san s-serif, Arial, Helvetica;
+  /*  border: 1px solid black; */
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+  color: var(--titulos);
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+input {
+  cursor: pointer;
+}
+/* clases generales+++++++++++++++++++++++++++++++++++++++ */
+.boton-violeta {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  background-color: #8b48bf;
+  color: white;
+  font-weight: 300;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+}
+
+.boton-violeta:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+/* header++++++++++++++++++++++++++++++++++++++++++++++++++ */
+header {
+  padding: 20px 60px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul li {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 20px;
+  color: #242e52;
+  transition: 0.5s;
+}
+
+header nav ul li:hover {
+  scale: 1.1;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* fondo tenista y vontenido+++++++++++++++++++++++++++++++ */
+
+.fondo-tenista {
+  background-color: white;
+  padding: 60px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.texto-tenista {
+  text-align: right;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--titulos);
+  font-size: 2.5rem;
+}
+
+.p-tenista {
+  font-weight: 500;
+}
+
+/* fondo violeta y contenido+++++++++++++++++++++++++++++++ */
+
+.fondo-primario {
+  justify-content: space-evenly;
+  color: white;
+  background-color: var(--primario);
+  padding: 40px 60px;
+  display: flex;
+}
+
+.fondo-primario h2 {
+  width: 30%;
+}
+
+.fondo-primario p {
+  font-weight: 300;
+  width: 30%;
+}
+
+.more {
+  width: 130px;
+}
+
+/* fondo gris y contenido++++++++++++++++++++++++++++++++ */
+.fondo-gris {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: var(--titulos);
+  background-color: var(--neutro);
+  padding: 40px 60px;
+  display: flex;
+  gap: 20px;
+}
+
+.fondo-gris > div {
+  display: flex;
+  width: 45%;
+  background-color: var(--neutro);
+  transition: 0.5s;
+  padding: 10px;
+}
+
+.fondo-gris > div:hover {
+  scale: 1.1;
+  cursor: pointer;
+  z-index: 1;
+  outline: 3px var(--primario) solid;
+  position: relative;
+}
+
+.fondo-gris > div > div {
+  padding: 0 20px;
+}
+
+.fondo-gris h3 {
+  padding: 0 0 25px 0;
+}
+
+.fondo-gris p {
+  color: var(--p-neutro);
+}
+
+.numerador {
+  border-radius: 20px;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  background-color: var(--primario);
+}
+
+/* fondo jugadores y contenido++++++++++++++++++++++++++++++++ */
+.fondo-jugadores {
+  gap: 50px;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fondo-jugadores h2 {
+  padding: 40px 0;
+  color: var(--titulos);
+}
+
+.fondo-jugadores > div {
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.grande-lebron {
+  cursor: zoom-in;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  background-color: #fafafa;
+  transition: 0.5s;
+}
+.grande-navarro {
+  cursor: zoom-in;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  background-color: #fafafa;
+  transition: 0.5s;
+}
+
+.grande-sanyo {
+  cursor: zoom-in;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  background-color: #fafafa;
+  transition: 0.5s;
+}
+
+.fondo-jugadores > div > div:hover {
+  scale: 1.1;
+  cursor: zoom-in;
+  z-index: 1;
+  outline: 3px var(--primario) solid;
+}
+
+.grande-sanyo:hover:active {
+  scale: 2;
+  z-index: 1;
+  outline: 7px var(--primario) solid;
+  translate: 50% -15px;
+}
+
+.grande-lebron:hover:active {
+  scale: 2;
+  z-index: 1;
+  outline: 5px var(--primario) solid;
+  translate: 0 -15px;
+}
+
+.grande-navarro:hover:active {
+  scale: 2;
+  z-index: 1;
+  outline: 5px var(--primario) solid;
+  translate: -50% -15px;
+}
+
+.fondo-jugadores p {
+  cursor: zoom-in;
+  padding: 20px 10px;
+  color: var(--p-neutro);
+}
+
+.fondo-jugadores img {
+  cursor: zoom-in;
+  top: -25px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+/* segundo fondo c primario y contenido+++++++++++++++++++++++ */
+.vi2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px 150px;
+  justify-content: space-between;
+}
+
+.vi2 a {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 12px 40px;
+  background-color: white;
+  color: #8b48bf;
+  font-weight: 300;
+  box-shadow: 00px 4px 8px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+}
+
+.vi2 a:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+
+/* footer y contenido+++++++++++++++++++++++++++++++++++++ */
+.top-footer {
+  justify-content: space-evenly;
+  color: white;
+  background-color: #1e1e26;
+  padding: 40px 0px;
+  display: flex;
+}
+
+.logo-redes {
+  gap: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-footer i {
+  scale: 1.2;
+  padding: 0 7px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.top-footer i:hover {
+  scale: 2;
+}
+
+.nav-lista {
+  width: 25%;
+}
+
+.nav-lista nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-lista ul li {
+  color: white;
+  font-weight: 200;
+  padding: 3px 0px;
+  transition: 0.5s;
+}
+
+.nav-lista ul li:hover {
+  scale: 1.1;
+}
+
+.top-footer form {
+  display: flex;
+  gap: 12px;
+}
+
+.top-footer form input[type="button"] {
+  padding: 12px 20px;
+  border-radius: 20px;
+  background-color: #8b48bf;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.top-footer form input[type="button"]:hover {
+  scale: 1.1;
+}
+
+.top-footer form input[type="text"] {
+  padding: 12px 30px 12px 10px;
+  border-radius: 20px;
+  border: 0px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.top-footer form input[type="text"]:focus {
+  outline: none;
+  scale: 1.1;
+}
+
+footer {
+  padding: 0 11% 20px;
+  background-color: #1e1e26;
+}
+
+footer p {
+  color: #8c8c94;
+  font-size: 0.7rem;
+  text-align: right;
+}
+/* media tablet+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media (max-width: 1100px) {
+  .fondo-tenista {
+    padding: 60px 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* fondo tenista y contenido ++++++++++++++++++++++++++++++*/
+
+  :root {
+    --primario: #3cddf3;
+    --titulos: #232c50;
+    --neutro: #ffffff;
+    --p-neutro: #b3b2b7;
+  }
+
+  header nav a {
+    display: none;
+  }
+  header .boton-violeta {
+    display: none;
+  }
+  header nav:before {
+    content: url(../imagenes/icon-hamburger.svg);
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.5s;
+  }
+
+  .fondo-tenista {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+  .fondo-tenista img {
+    width: 70vw;
+  }
+
+  .texto-tenista {
+    width: auto;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  /* fondo primario y contenido +++++++++++++++++++++++++++++*/
+  .fondo-primario {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .fondo-primario h2 {
+    width: auto;
+  }
+  .fondo-primario p {
+    width: auto;
+  }
+  /* fondo gris y contenido ++++++++++++++++++++++++++++++*/
+  .fondo-gris {
+    padding: 40px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fondo-gris div {
+    padding: 0;
+    width: auto;
+  }
+
+  .fondo-gris div p {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .fondo-gris div div {
+    padding: 20px 0 0 20px;
+  }
+
+  .fondo-gris div:hover {
+    scale: none;
+    outline: none;
+  }
+
+  .numerador {
+    display: none;
+  }
+
+  .fondo-gris h3 {
+    border-radius: 20px 0 0 20px;
+    padding: 10px 0;
+    background-color: rgba(139, 72, 191, 0.3);
+  }
+
+  .nt1::before {
+    margin-right: 10px;
+    gap: 10px;
+    content: "1";
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    background-color: #8b48bf;
+  }
+
+  .nt2::before {
+    margin-right: 10px;
+    gap: 10px;
+    content: "2";
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    background-color: #8b48bf;
+  }
+
+  .nt3::before {
+    margin-right: 10px;
+    gap: 10px;
+    content: "3";
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    background-color: #8b48bf;
+  }
+
+  /* fondo jugadores y contenido++++++++++++++++++++++++++++ */
+
+  .fondo-jugadores {
+    padding: 80px 20px;
+  }
+
+  .grande-navarro {
+    display: none;
+  }
+
+  .grande-sanyo {
+    display: none;
+  }
+
+  .grande-lebron {
+    cursor: default;
+  }
+
+  .grande-lebron img {
+    cursor: default;
+  }
+
+  .grande-lebron p {
+    cursor: default;
+  }
+
+  .fondo-jugadores > div > div:hover {
+    cursor: default;
+    outline: 0;
+    scale: 1;
+  }
+
+  .grande-lebron:hover:active {
+    scale: 1;
+    outline: 0px;
+    translate: 0px 0px;
+  }
+  /* fondo color primario 2 y contenido++++++++++++++++++++++ */
+
+  .vi2 {
+    text-align: center;
+    padding: 60px 40px;
+  }
+
+  .vi2 a {
+    background-color: #232c50;
+    color: white;
+  }
+
+  /* footer y contenido+++++++++++++++++++++++++++++++++++++ */
+  .top-footer {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .logo-redes {
+    width: 80%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .logo-redes nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-lista {
+    width: 60%;
+  }
+
+  .top-footer form {
+    width: 100%;
+  }
+
+  .top-footer input[type="text"] {
+    width: 60vw;
+  }
+  footer p {
+    text-align: center;
+  }
+}
